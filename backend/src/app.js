@@ -17,9 +17,9 @@ app.use(cookieParser());
 
 //routes import
 import userRouter from "./routes/user.routes.js";
-// import noticeRouter from './routes/notice.routes.js'
+import noticeRouter from './routes/notice.routes.js'
 
 app.use("/api/v1/users", userRouter);
-// app.use("/api/v1/notice",noticeRouter)
+app.use("/api/v1/notice",noticeRouter)
 
 export { app };
